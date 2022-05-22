@@ -1,0 +1,114 @@
+body.home .banner-scroll {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--dark-bg);
+}
+body.home .banner-scroll img {
+  position: absolute;
+  max-width: 80%;
+  right: 20px;
+  z-index: -2;
+  top: 4vh;
+  bottom: 0;
+  margin: auto;
+}
+body.home .banner-scroll h1 {
+  position: absolute;
+  top: 36vh;
+  left: 10%;
+  margin: auto;
+  min-width: fit-content;
+  font-weight: 100;
+}
+body.home .banner-scroll h1 strong, body.home .banner-scroll h1 .highlight {
+  font-weight: 900;
+  position: relative;
+}
+body.home .last-articles-scroll {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+body.home .last-articles-scroll h2 {
+  margin: 0 auto 50px auto;
+}
+body.home .last-articles-scroll .projects {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0;
+}
+body.home .last-articles-scroll .projects .project {
+  display: inline-block;
+  background: var(--white);
+  box-shadow: 19px 0px 33px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  max-width: 300px;
+  min-height: 400px;
+}
+body.home .last-articles-scroll .projects .project a {
+  text-decoration: none;
+}
+body.home .last-articles-scroll .projects .project img {
+  max-width: 100%;
+}
+body.home .last-articles-scroll .projects .project h4 {
+  display: block;
+  color: var(--black-lighter);
+  text-decoration: none;
+  margin: 14px auto;
+  padding: 0 20px;
+}
+body.home .last-articles-scroll .projects .project p {
+  padding: 0 20px;
+  color: var(--black-lighter);
+  text-align: justify;
+}
+body.home .bio-scroll {
+  background-color: var(--dark-bg);
+}
+body.home .bio-scroll .bio-wrapper {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body.home .bio-scroll .bio-wrapper .bio-illustration {
+  position: relative;
+  margin-right: 230px;
+  margin-top: 90px;
+}
+body.home .bio-scroll .bio-wrapper .bio-illustration .arrow {
+  position: absolute;
+  top: 0;
+  right: -190px;
+}
+body.home .bio-scroll .bio-wrapper .bio-content {
+  min-height: 380px;
+}
+body.home .bio-scroll .bio-wrapper .bio-content h4.title {
+  font-size: 56px;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 20px 0;
+}
+body.home .bio-scroll .bio-wrapper .bio-content h4.title strong, body.home .bio-scroll .bio-wrapper .bio-content h4.title .highlight {
+  font-weight: 900;
+  position: relative;
+}
+
+/*# sourceMappingURL=homepage.css.map */

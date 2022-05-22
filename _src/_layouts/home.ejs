@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('common/head')%>
+    </head>
+    <body class="home" data-scroll-container>
+
+      <%- include('common/nav')%>
+
+
+    <section class="banner-scroll" data-scroll data-scroll-section data-scroll-id="banner-scroll">
+      <img data-scroll data-scroll-speed="1" src="/img/banner_illustration_1.png" alt="">
+      <h1 data-scroll data-scroll-speed="2"><strong>Bienvenue à toi</strong><br>ici ça parle <span class="highlight">code</span></h1>
+    </section>
+
+    <section class="last-articles-scroll" data-scroll data-scroll-section data-scroll-id="last-articles-scroll">
+        <h2 class="highlight" data-scroll data-scroll-speed="1">Derniers articles</h2>
+
+        <ul class="projects" data-scroll data-scroll-speed="2">
+          <% for(var i=0; i < 3; i++) {%>
+                <li class="project">
+                  <a href="<%= collections.all[i].url %>">
+                    <img src="/img/<%= collections.all[i].fileSlug %>/thumbnail.png" alt="Image d'illustration de l'article <%= collections.all[i].data.title %>">
+                    <h4><%= collections.all[i].data.title %></h4>
+                    <p><%= collections.all[i].data.summary %></p>
+                  </a>
+                </li>
+          <%}%>
+        </ul>
+
+    </section>
+
+    <section class="bio-scroll" data-scroll data-scroll-section data-scroll-id="bio-scroll">
+      <div class="bio-wrapper">
+        <div class="bio-illustration">
+          <img src="/img/home_bio_illustration.png" alt="" data-scroll data-scroll-speed="1"/>
+          <img src="/img/home_bio_arrow.png" class="arrow" alt="" data-scroll data-scroll-speed="1.2"/>
+        </div>
+        <div class="bio-content">
+          <h4 class="title" data-scroll data-scroll-speed="2">ça c'est moi,&nbsp;<strong>Julien</strong></h4>
+          <p  data-scroll data-scroll-speed="1.8">Nantais d’adoption et Lead Dev dans une jeune entreprise, je suis un grand passionné de tout et n’importe quoi. Si je ne devais choisir qu’une phrase pour résumer mon état d’esprit, ce serait sans doute :</p>
+          <blockquote data-scroll data-scroll-speed="1.6">
+            <p>Il n’existe pas de sujet peu intéressant, il n’y a que des personnes peu interressées.</p>
+            <cite>Gilbert Keith Chesterton</cite>
+          </blockquote>
+          <a href="/bio" data-scroll data-scroll-speed="1.4">En savoir plus sur moi</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-scroll" data-scroll data-scroll-section data-scroll-id="content-scroll">
+        Content de la home
+    </section>
+
+      <%- include('common/footer')%>
+
+      <%- include('common/js')%>
+
+      </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+<meta name="robots" content="noindex" />
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Homepage</title>
+<meta name="description" content="Description de la homepage">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Homepage">
+<meta property="og:description" content="Description de la homepage">
+<meta property="og:url" content="http://localhost:8080/">
+<meta property="og:image" content="http://localhost:8080//img/meta_image.jpg">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://localhost:8080/">
+<meta property="twitter:title" content="Homepage">
+<meta property="twitter:description" content="Description de la homepage">
+<meta property="twitter:image" content="http://localhost:8080//img/meta_image.jpg">
+
+<link rel="manifest" href="http://localhost:8080//site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:8080//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:8080//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:8080//favicon-16x16.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.css">
+
+<link rel="mask-icon" href="http://localhost:8080//safari-pinned-tab.svg" color="#2F2E4D">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#2F2E4D">
+
+<meta name="msapplication-config" content="http://localhost:8080//browserconfig.xml">
+
+    </head>
+    <body class="home" data-scroll-container>
+
+      <nav class="main-nav">
+    <div id="logo" class="logo"><a href="/"></a></div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/articles">Journal de bord</a></li>
+        <li><a href="/">Qui suis-je</a></li>
+    </ul>
+</nav>
+
+
+    <section class="banner-scroll" data-scroll data-scroll-section data-scroll-id="banner-scroll">
+      <img data-scroll data-scroll-speed="1" src="/img/banner_illustration_1.png" alt="">
+      <h1 data-scroll data-scroll-speed="2"><strong>Bienvenue à toi</strong><br>ici ça parle <span class="highlight">code</span></h1>
+    </section>
+
+    <section class="last-articles-scroll" data-scroll data-scroll-section data-scroll-id="last-articles-scroll">
+        <h2 class="highlight" data-scroll data-scroll-speed="1">Derniers articles</h2>
+
+        <ul class="projects" data-scroll data-scroll-speed="2">
+          
+                <li class="project">
+                  <a href="/articles/code/article-1/">
+                    <img src="/img/article-1/thumbnail.png" alt="Image d'illustration de l'article Test article 1">
+                    <h4>Test article 1</h4>
+                    <p>Résumé de l&#39;article 1 en quelques mots</p>
+                  </a>
+                </li>
+          
+                <li class="project">
+                  <a href="/articles/code/article-2/">
+                    <img src="/img/article-2/thumbnail.png" alt="Image d'illustration de l'article Test article 2">
+                    <h4>Test article 2</h4>
+                    <p>Résumé de l&#39;article 2 en quelques mots, il faut voir si ça tient dans la case de thumbnail</p>
+                  </a>
+                </li>
+          
+                <li class="project">
+                  <a href="/articles/tools/ma-toolbox-2022/">
+                    <img src="/img/ma-toolbox-2022/thumbnail.png" alt="Image d'illustration de l'article Ma toolbox 2022">
+                    <h4>Ma toolbox 2022</h4>
+                    <p>Résumé de l&#39;article sur ma toolbox en quelques mots, il faut voir si ça tient dans la case de thumbnail</p>
+                  </a>
+                </li>
+          
+        </ul>
+
+    </section>
+
+    <section class="bio-scroll" data-scroll data-scroll-section data-scroll-id="bio-scroll">
+      <div class="bio-wrapper">
+        <div class="bio-illustration">
+          <img src="/img/home_bio_illustration.png" alt="" data-scroll data-scroll-speed="1"/>
+          <img src="/img/home_bio_arrow.png" class="arrow" alt="" data-scroll data-scroll-speed="1.2"/>
+        </div>
+        <div class="bio-content">
+          <h4 class="title" data-scroll data-scroll-speed="2">ça c'est moi,&nbsp;<strong>Julien</strong></h4>
+          <p  data-scroll data-scroll-speed="1.8">Nantais d’adoption et Lead Dev dans une jeune entreprise, je suis un grand passionné de tout et n’importe quoi. Si je ne devais choisir qu’une phrase pour résumer mon état d’esprit, ce serait sans doute :</p>
+          <blockquote data-scroll data-scroll-speed="1.6">
+            <p>Il n’existe pas de sujet peu intéressant, il n’y a que des personnes peu interressées.</p>
+            <cite>Gilbert Keith Chesterton</cite>
+          </blockquote>
+          <a href="/bio" data-scroll data-scroll-speed="1.4">En savoir plus sur moi</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-scroll" data-scroll data-scroll-section data-scroll-id="content-scroll">
+        Content de la home
+    </section>
+
+      <div class="footer-scroll-inner">
+    <div class="separator"></div>
+    <div class="primary-footer"></div>
+  <div class="secondary-footer">
+    <span>©2022 Design et développement par Julien Folliot.</span>
+  </div>
+</div>
+
+      <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+      </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('common/head')%>
+    </head>
+    <body class="article" data-scroll-container>
+
+        <%- include('common/nav')%>
+
+        <section class="content-scroll" data-scroll data-scroll-section data-scroll-id="content-scroll">
+            <%- content %>
+        </section>
+
+        <%- include('common/footer')%>
+
+        <%- include('common/js')%>
+    </body>
+</html>

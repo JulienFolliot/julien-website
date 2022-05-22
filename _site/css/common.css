@@ -1,0 +1,145 @@
+:root {
+  --highlight-bg: #FCA311;
+  --dark-bg: #E5E5E5;
+  --black-lighter: #14213D;
+  --secondary: #4E9FA5;
+  --white: #FFFFFF;
+  --roboto: "Roboto", sans-serif;
+  font-family: var(--roboto);
+  color: var(--black-lighter);
+}
+
+h1 {
+  font-family: var(--roboto);
+  font-size: 56px;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h2 {
+  position: relative;
+  font-family: var(--roboto);
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: inline-block;
+}
+
+h4 {
+  position: relative;
+  font-family: var(--roboto);
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: inline-block;
+}
+
+p {
+  font-weight: 300;
+  font-size: 15px;
+  max-width: 560px;
+}
+
+[data-scroll-container], [data-scroll-section] {
+  perspective: 1px;
+}
+
+.main-nav {
+  position: fixed;
+  display: flex;
+  width: calc(100vw - 80px);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  z-index: 999;
+  left: 40px;
+}
+.main-nav ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+.main-nav ul li {
+  display: inline-block;
+  padding: 0 30px;
+  font-weight: 600;
+  size: 24px;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  color: var(--black-lighter);
+}
+
+.logo {
+  width: 40px;
+  height: 51px;
+  background: transparent url("/img/logo.svg") no-repeat center;
+  background-size: contain;
+}
+
+.scroll-progress {
+  height: 70vh;
+  top: 20vh;
+  width: 6px;
+  position: fixed;
+  left: 40px;
+  z-index: 1;
+}
+
+@media (max-width: 1023px) {
+  .small-logo {
+    position: absolute;
+  }
+
+  .scroll-progress {
+    display: none;
+  }
+}
+.scroll-progress .scroll-progress-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 2px;
+  background: var(--black-lighter);
+  margin: 0 auto;
+}
+
+.scroll-progress .scroll-progress-foreground {
+  position: absolute;
+  top: 0;
+  width: 6px;
+  background: var(--black-lighter);
+}
+
+.highlight {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: 10px;
+}
+.highlight:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: -4px;
+  right: -4px;
+  left: 4px;
+  width: 100%;
+  background: var(--highlight-bg);
+  transform: skew(1deg) rotate(-1deg);
+  z-index: -1;
+}
+.highlight:before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  bottom: 7px;
+  right: 7px;
+  left: -7px;
+  width: 100%;
+  border: 3px solid var(--black-lighter);
+  transform: skew(1deg) rotate(-1deg);
+}
+
+/*# sourceMappingURL=common.css.map */
