@@ -1,7 +1,7 @@
 :root {
   --highlight-bg: #FCA311;
   --dark-bg: #E5E5E5;
-  --black-lighter: #14213D;
+  --black-lighter: #040d1e;
   --secondary: #4E9FA5;
   --white: #FFFFFF;
   --roboto: "Roboto", sans-serif;
@@ -37,8 +37,43 @@ h4 {
 
 p {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 17px;
   max-width: 560px;
+}
+
+.button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black-lighter);
+  background: transparent;
+  transition: 0.1s;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 12px 20px;
+}
+.button:hover, .button:focus {
+  transition: 0.5s;
+  background: var(--highlight-bg);
+}
+
+blockquote {
+  margin: 10px 0;
+}
+blockquote p {
+  margin: 10px 0;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 33px;
+}
+blockquote p::before, blockquote p::after {
+  content: '"';
+}
+blockquote cite {
+  display: block;
+  text-align: right;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
 }
 
 [data-scroll-container], [data-scroll-section] {

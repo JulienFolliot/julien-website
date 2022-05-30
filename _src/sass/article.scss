@@ -1,3 +1,12 @@
 body.article {
-    
+    .article-header {
+      height: 70vh;
+      margin-top: 100px;
+      position: relative;
+      .article-illustration {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+    }
 }

@@ -41,8 +41,9 @@ body.home {
         justify-content: center;
        h2 {
         margin: 0 auto 50px auto;
+        padding-top: 5px;
+        padding-bottom: 8px;
        }
-
        .projects {
             display: flex;
             list-style: none;
@@ -93,7 +94,7 @@ body.home {
             .bio-illustration {
                 position: relative;
                 margin-right: 230px;
-                margin-top: 90px;
+                margin-top: 0;
                 .arrow {
                     position: absolute;
                     top: 0;
@@ -107,11 +108,58 @@ body.home {
                     line-height: 100px;
                     text-transform: uppercase;
                     font-weight: 100;
-                    margin: 20px 0;
+                    margin: 20px 0 0;
                     strong, .highlight {
                      font-weight: 900;
                      position: relative;
                     }
+                }
+                p {
+                    margin-top: 0;
+                }
+                .action-block {
+                    margin-top: 100px;
+                    text-align: right;
+                }
+            }
+       }
+    }
+    
+    .about-scroll {
+        background-color: var(--highlight-bg);
+        .about-wrapper {
+           min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            .about-illustration {
+                flex: 1;
+                width: 100%;
+                height: 100vh;
+                background: transparent url("/img/home_about_illustration.png") no-repeat center/cover;
+            }
+            .about-content {
+                flex: 1;
+                min-height: 380px;
+                padding: 0 150px;
+                h4.title {
+                    font-size: 56px;
+                    line-height: 100px;
+                    text-transform: uppercase;
+                    font-weight: 100;
+                    margin: 20px 0 0;
+                    strong, .highlight {
+                     font-weight: 900;
+                     position: relative;
+                    }
+                }
+                p {
+                    margin-top: 0;
+                }
+                .action-block {
+                    margin-top: 100px;
+                    text-align: right;
                 }
             }
        }

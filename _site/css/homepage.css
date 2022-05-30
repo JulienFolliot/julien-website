@@ -38,6 +38,8 @@ body.home .last-articles-scroll {
 }
 body.home .last-articles-scroll h2 {
   margin: 0 auto 50px auto;
+  padding-top: 5px;
+  padding-bottom: 8px;
 }
 body.home .last-articles-scroll .projects {
   display: flex;
@@ -89,7 +91,7 @@ body.home .bio-scroll .bio-wrapper {
 body.home .bio-scroll .bio-wrapper .bio-illustration {
   position: relative;
   margin-right: 230px;
-  margin-top: 90px;
+  margin-top: 0;
 }
 body.home .bio-scroll .bio-wrapper .bio-illustration .arrow {
   position: absolute;
@@ -104,11 +106,18 @@ body.home .bio-scroll .bio-wrapper .bio-content h4.title {
   line-height: 100px;
   text-transform: uppercase;
   font-weight: 100;
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 body.home .bio-scroll .bio-wrapper .bio-content h4.title strong, body.home .bio-scroll .bio-wrapper .bio-content h4.title .highlight {
   font-weight: 900;
   position: relative;
+}
+body.home .bio-scroll .bio-wrapper .bio-content p {
+  margin-top: 0;
+}
+body.home .bio-scroll .bio-wrapper .bio-content .action-block {
+  margin-top: 100px;
+  text-align: right;
 }
 
 /*# sourceMappingURL=homepage.css.map */

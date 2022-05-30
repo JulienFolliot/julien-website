@@ -7,6 +7,10 @@
 
         <%- include('common/nav')%>
 
+        <section id="article-header-scroll" class="article-header" data-scroll data-scroll-section data-scroll-id="article-header-scroll">
+            <div class="article-illustration" style="background: transparent url('/img/<%= page.fileSlug %>/thumbnail.png') no-repeat center/cover;" data-scroll data-scroll-speed="2"></div>
+        </section>
+
         <section class="content-scroll" data-scroll data-scroll-section data-scroll-id="content-scroll">
             <%- content %>
         </section>

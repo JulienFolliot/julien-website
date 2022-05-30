@@ -1,7 +1,7 @@
 :root {
     --highlight-bg: #FCA311;
     --dark-bg: #E5E5E5;
-    --black-lighter: #14213D;
+    --black-lighter: #040d1e;
     --secondary: #4E9FA5;
     --white: #FFFFFF;
     --roboto: 'Roboto', sans-serif;
@@ -39,6 +39,21 @@ p {
     font-weight: 300;
     font-size: 17px;
     max-width: 560px;
+}
+
+.button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black-lighter);
+    background: transparent;
+    transition: 0.1s;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 12px 20px;
+    &:hover, &:focus {
+        transition: 0.5s;
+        background: var(--highlight-bg);
+    }
 }
 
 blockquote {
@@ -162,4 +177,13 @@ blockquote {
         border: 3px solid var(--black-lighter);
         transform: skew(1deg) rotate(-1deg);
     }
+}
+
+.footer-scroll {
+    background: var(--black-lighter);
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: 100;
 }
