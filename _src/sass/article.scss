@@ -5,8 +5,32 @@ body.article {
       position: relative;
       .article-illustration {
         position: absolute;
+        z-index: -1;
         height: 100%;
         width: 100%;
       }
+      .article-title {
+        position: absolute;
+        bottom: 20px;
+        left: 5%;
+        color: var(--white);
+        background-color: var(--black-lighter);
+        h1 {
+          margin: 14px 50px;
+          font-size: 42px;
+          line-height: normal;
+        }
+      }
+      .article-category {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+      }
+    }
+
+    .content-scroll {
+      padding: 0 60px 80px 60px;
+      max-width: 860px;
+      margin: 0 auto;
     }
 }

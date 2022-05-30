@@ -618,7 +618,6 @@ h4 {
 p {
   font-weight: 300;
   font-size: 17px;
-  max-width: 560px;
 }
 
 .button {
@@ -637,7 +636,7 @@ p {
 }
 
 blockquote {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 blockquote p {
   margin: 10px 0;
@@ -868,6 +867,7 @@ body.home .bio-scroll .bio-wrapper .bio-illustration .arrow {
 }
 body.home .bio-scroll .bio-wrapper .bio-content {
   min-height: 380px;
+  max-width: 560px;
 }
 body.home .bio-scroll .bio-wrapper .bio-content h4.title {
   font-size: 56px;
@@ -934,8 +934,31 @@ body.article .article-header {
 }
 body.article .article-header .article-illustration {
   position: absolute;
+  z-index: -1;
   height: 100%;
   width: 100%;
+}
+body.article .article-header .article-title {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  color: var(--white);
+  background-color: var(--black-lighter);
+}
+body.article .article-header .article-title h1 {
+  margin: 14px 50px;
+  font-size: 42px;
+  line-height: normal;
+}
+body.article .article-header .article-category {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+body.article .content-scroll {
+  padding: 0 60px 80px 60px;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,9 +11,7 @@ summary: "Résumé de l'article 1 en quelques mots"
 
 With content 
 
-> Quote here.
->
-> <cite>Benjamin Franklin</cite>
+> <p>Quote here.</p><cite>Benjamin Franklin</cite>
 
 ## Sub titles
 
