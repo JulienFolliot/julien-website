@@ -27,7 +27,8 @@ body.article {
         box-shadow: var(--shadow);
         h1 {
           margin: 14px 50px;
-          font-size: 42px;
+          font-size: 30px;
+          max-width: 500px;
           line-height: normal;
         }
       }

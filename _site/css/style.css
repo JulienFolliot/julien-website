@@ -848,7 +848,7 @@ body.home .last-articles-scroll .projects .project p {
   text-align: justify;
 }
 body.home .bio-scroll {
-  background-color: var(--dark-bg);
+  background-color: var(--white);
 }
 body.home .bio-scroll .bio-wrapper {
   min-height: 100vh;
@@ -961,7 +961,8 @@ body.article .content-scroll .article-title {
 }
 body.article .content-scroll .article-title h1 {
   margin: 14px 50px;
-  font-size: 42px;
+  font-size: 30px;
+  max-width: 500px;
   line-height: normal;
 }
 body.article .content-scroll .article-category {

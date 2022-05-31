@@ -13,22 +13,7 @@
       <h1 data-scroll data-scroll-speed="2"><strong>Bienvenue à toi</strong><br>ici ça parle <span class="highlight">code</span></h1>
     </section>
 
-    <section class="last-articles-scroll" data-scroll data-scroll-section data-scroll-id="last-articles-scroll">
-        <h2 class="highlight" data-scroll data-scroll-speed="1">Derniers articles</h2>
-
-        <ul class="projects" data-scroll data-scroll-speed="2">
-          <% for(var i=0; i < 3; i++) {%>
-                <li class="project">
-                  <a href="<%= collections.all[i].url %>">
-                    <img src="/img/<%= collections.all[i].fileSlug %>/thumbnail.png" alt="Image d'illustration de l'article <%= collections.all[i].data.title %>">
-                    <h4><%= collections.all[i].data.title %></h4>
-                    <p><%= collections.all[i].data.summary %></p>
-                  </a>
-                </li>
-          <%}%>
-        </ul>
-
-    </section>
+    
 
     <section class="bio-scroll" data-scroll data-scroll-section data-scroll-id="bio-scroll">
       <div class="bio-wrapper">
@@ -54,14 +39,31 @@
       <div class="about-wrapper">
         <div class="about-content">
           <h4 class="title" data-scroll data-scroll-speed="2">Ici c'est mon <strong>site perso</strong></h4>
-          <p  data-scroll data-scroll-speed="1.8">Plus qu’un simple blog, je vois mon site perso comme un journal de bord dans lequel je consigne mes découvertes, mes expérimentations, mes humeurs, etc..., bref, tout ce qui mérite d’être tracé pour ma mémoire et si ça peut aider les âmes qui se perdent en cet endroit, eh bien c’est gagné pour moi :)</p>
+          <p  data-scroll data-scroll-speed="1.8">Plus qu’un simple blog, j'ai construit mon site perso comme un journal de bord dans lequel je consigne mes découvertes, mes expérimentations, mes humeurs, etc..., bref, tout ce qui mérite d’être tracé pour ma mémoire et si ça peut aider les âmes qui se perdent en cet endroit, eh bien c’est gagné pour moi :)</p>
           <div class="action-block" data-scroll data-scroll-speed="1.4">
-            <a href="/articles" class="button">Ouvrir le carnet de bord</a>
+            <a href="/articles" class="button">Ouvrir le journal de bord</a>
           </div>
         </div>
         <div class="about-illustration"></div>
       </div>
     </section>
+
+    <section class="last-articles-scroll" data-scroll data-scroll-section data-scroll-id="last-articles-scroll">
+      <h2 class="highlight" data-scroll data-scroll-speed="1">Derniers articles</h2>
+
+      <ul class="projects" data-scroll data-scroll-speed="2">
+        <% for(var i=0; i < 3; i++) {%>
+              <li class="project">
+                <a href="<%= collections.all[i].url %>">
+                  <img src="/img/<%= collections.all[i].fileSlug %>/thumbnail.png" alt="Image d'illustration de l'article <%= collections.all[i].data.title %>">
+                  <h4><%= collections.all[i].data.title %></h4>
+                  <p><%= collections.all[i].data.summary %></p>
+                </a>
+              </li>
+        <%}%>
+      </ul>
+
+  </section>
 
     <section class="content-scroll" data-scroll data-scroll-section data-scroll-id="content-scroll">
         

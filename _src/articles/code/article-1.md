@@ -2,7 +2,7 @@
 layout: article
 title: "Test article 1"
 tags: ['code', 'all']
-date: 2021-01-01
+date: 2022-04-10
 categoryTitle: "Code"
 summary: "Résumé de l'article 1 en quelques mots"
 --- 

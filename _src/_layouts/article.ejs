@@ -13,7 +13,7 @@
 
         <section class="content-scroll" data-scroll data-scroll-section data-scroll-id="content-scroll">
             <div class="article-title">
-                <h1><%= title %></h1>
+                <h1>Jour <%= Math.round(((new Date(page.date)).getTime() - (new Date(pkg.startDate)).getTime()) / (1000*60*60*24)) %> : <%= title %></h1>
             </div>
             <div class="article-category"><h2 class="highlight"><%= categoryTitle %></h2></div>
             <div class="article-content">
