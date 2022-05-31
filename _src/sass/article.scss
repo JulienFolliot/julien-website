@@ -25,23 +25,39 @@ body.article {
         color: var(--white);
         background-color: var(--black-lighter);
         box-shadow: var(--shadow);
-        h1 {
+        h2 {
           margin: 14px 50px;
           font-size: 30px;
           max-width: 500px;
           line-height: normal;
+          font-weight: 900;
         }
       }
       .article-category {
         position: absolute;
         top: -65px;
         right: -20px;
+        h2 {
+          font-size: 28px;
+          padding: 10px 24px;
+          text-transform: uppercase;
+          font-weight: 900;
+        }
         .highlight:before, .highlight:after {
           box-shadow: var(--shadow);
         }
       }
       .article-content {
         padding-top: 60px;
+        img {
+          display: block;
+          width: 80%;
+          margin: 50px auto;
+        }
+        .end-of-article {
+          font-style: italic;
+          font-weight: 500;
+        }
       }
     }
 }

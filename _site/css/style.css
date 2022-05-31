@@ -592,19 +592,19 @@ h3 {
 
 h1 {
   font-family: var(--roboto);
-  font-size: 56px;
-  line-height: 100px;
   text-transform: uppercase;
   font-weight: 900;
+  font-size: 40px;
+  line-height: normal;
 }
 
 h2 {
   position: relative;
   font-family: var(--roboto);
-  font-size: 38px;
-  text-transform: uppercase;
-  font-weight: 900;
+  font-size: 32px;
+  font-weight: 500;
   display: inline-block;
+  margin: 20px 0 10px 0;
 }
 
 h4 {
@@ -786,6 +786,8 @@ body.home .banner-scroll img {
 }
 body.home .banner-scroll h1 {
   position: absolute;
+  font-size: 56px;
+  line-height: 100px;
   top: 36vh;
   left: 10%;
   margin: auto;
@@ -812,6 +814,9 @@ body.home .last-articles-scroll h2 {
   margin: 0 auto 50px auto;
   padding-top: 5px;
   padding-bottom: 8px;
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 body.home .last-articles-scroll .projects {
   display: flex;
@@ -959,22 +964,38 @@ body.article .content-scroll .article-title {
   background-color: var(--black-lighter);
   box-shadow: var(--shadow);
 }
-body.article .content-scroll .article-title h1 {
+body.article .content-scroll .article-title h2 {
   margin: 14px 50px;
   font-size: 30px;
   max-width: 500px;
   line-height: normal;
+  font-weight: 900;
 }
 body.article .content-scroll .article-category {
   position: absolute;
   top: -65px;
   right: -20px;
 }
+body.article .content-scroll .article-category h2 {
+  font-size: 28px;
+  padding: 10px 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
 body.article .content-scroll .article-category .highlight:before, body.article .content-scroll .article-category .highlight:after {
   box-shadow: var(--shadow);
 }
 body.article .content-scroll .article-content {
   padding-top: 60px;
+}
+body.article .content-scroll .article-content img {
+  display: block;
+  width: 80%;
+  margin: 50px auto;
+}
+body.article .content-scroll .article-content .end-of-article {
+  font-style: italic;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

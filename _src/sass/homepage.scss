@@ -16,6 +16,8 @@ body.home {
        }
        h1 {
            position: absolute;
+           font-size: 56px;
+            line-height: 100px;
            top: 36vh;
            left: 10%;
            margin: auto;
@@ -43,6 +45,9 @@ body.home {
         margin: 0 auto 50px auto;
         padding-top: 5px;
         padding-bottom: 8px;
+        font-size: 38px;
+        font-weight: 900;
+        text-transform: uppercase;
        }
        .projects {
             display: flex;

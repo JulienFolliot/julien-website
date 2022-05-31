@@ -14,6 +14,8 @@ body.home .banner-scroll img {
 }
 body.home .banner-scroll h1 {
   position: absolute;
+  font-size: 56px;
+  line-height: 100px;
   top: 36vh;
   left: 10%;
   margin: auto;
@@ -40,6 +42,9 @@ body.home .last-articles-scroll h2 {
   margin: 0 auto 50px auto;
   padding-top: 5px;
   padding-bottom: 8px;
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 body.home .last-articles-scroll .projects {
   display: flex;
@@ -76,7 +81,7 @@ body.home .last-articles-scroll .projects .project p {
   text-align: justify;
 }
 body.home .bio-scroll {
-  background-color: var(--dark-bg);
+  background-color: var(--white);
 }
 body.home .bio-scroll .bio-wrapper {
   min-height: 100vh;
