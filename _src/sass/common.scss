@@ -110,6 +110,10 @@ blockquote {
     height: 51px;
     background: transparent url("/img/logo.svg") no-repeat center;
     background-size: contain;
+    a {
+        display: block;
+        height: 100%;
+    }
 }
 
 .scroll-progress {

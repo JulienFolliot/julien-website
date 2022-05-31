@@ -691,6 +691,10 @@ blockquote cite {
   background: transparent url("/img/logo.svg") no-repeat center;
   background-size: contain;
 }
+.logo a {
+  display: block;
+  height: 100%;
+}
 
 .scroll-progress {
   height: 70vh;
