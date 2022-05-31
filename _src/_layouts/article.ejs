@@ -9,14 +9,16 @@
 
         <section id="article-header-scroll" class="article-header" data-scroll data-scroll-section data-scroll-id="article-header-scroll">
             <div class="article-illustration" style="background: transparent url('/img/<%= page.fileSlug %>/thumbnail.png') no-repeat center/cover;" data-scroll data-scroll-speed="2"></div>
-            <div class="article-title" data-scroll data-scroll-speed="1">
-                <h1><%= title %></h1>
-            </div>
-            <div class="article-category" data-scroll data-scroll-speed="1.5"><h2 class="highlight"><%= categoryTitle %></h2></div>
         </section>
 
         <section class="content-scroll" data-scroll data-scroll-section data-scroll-id="content-scroll">
-            <%- content %>
+            <div class="article-title">
+                <h1><%= title %></h1>
+            </div>
+            <div class="article-category"><h2 class="highlight"><%= categoryTitle %></h2></div>
+            <div class="article-content">
+                <%- content %>
+            </div>
         </section>
 
         <%- include('common/footer')%>

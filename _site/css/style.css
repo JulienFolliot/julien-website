@@ -938,27 +938,37 @@ body.article .article-header .article-illustration {
   height: 100%;
   width: 100%;
 }
-body.article .article-header .article-title {
+body.article .content-scroll {
+  position: relative;
+  padding: 0 60px 80px 60px;
+  max-width: 860px;
+  margin: -190px auto 200px auto;
+  box-shadow: 0px -10px 50px 0px rgba(0, 0, 0, 0.2784313725);
+  background: var(--white);
+}
+body.article .content-scroll .article-title {
   position: absolute;
-  bottom: 20px;
-  left: 5%;
+  top: -45px;
+  left: -25px;
   color: var(--white);
   background-color: var(--black-lighter);
+  box-shadow: 0px -10px 50px 0px rgba(0, 0, 0, 0.2784313725);
 }
-body.article .article-header .article-title h1 {
+body.article .content-scroll .article-title h1 {
   margin: 14px 50px;
   font-size: 42px;
   line-height: normal;
 }
-body.article .article-header .article-category {
+body.article .content-scroll .article-category {
   position: absolute;
-  bottom: 0;
-  right: 10%;
+  top: -65px;
+  right: -20px;
 }
-body.article .content-scroll {
-  padding: 0 60px 80px 60px;
-  max-width: 860px;
-  margin: 0 auto;
+body.article .content-scroll .article-category .highlight:before, body.article .content-scroll .article-category .highlight:after {
+  box-shadow: 0px -10px 50px 0px rgba(0, 0, 0, 0.2784313725);
+}
+body.article .content-scroll .article-content {
+  padding-top: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

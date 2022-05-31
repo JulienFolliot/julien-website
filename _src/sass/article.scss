@@ -9,12 +9,22 @@ body.article {
         height: 100%;
         width: 100%;
       }
+    }
+
+    .content-scroll {
+      position: relative;
+      padding: 0 60px 80px 60px;
+      max-width: 860px;
+      margin: -190px auto 200px auto;
+      box-shadow: 0px -10px 50px 0px #00000047;
+      background: var(--white);
       .article-title {
         position: absolute;
-        bottom: 20px;
-        left: 5%;
+        top: -45px;
+        left: -25px;
         color: var(--white);
         background-color: var(--black-lighter);
+        box-shadow: 0px -10px 50px 0px #00000047;
         h1 {
           margin: 14px 50px;
           font-size: 42px;
@@ -23,14 +33,14 @@ body.article {
       }
       .article-category {
         position: absolute;
-        bottom: 0;
-        right: 10%;
+        top: -65px;
+        right: -20px;
+        .highlight:before, .highlight:after {
+          box-shadow: 0px -10px 50px 0px #00000047;
+        }
       }
-    }
-
-    .content-scroll {
-      padding: 0 60px 80px 60px;
-      max-width: 860px;
-      margin: 0 auto;
+      .article-content {
+        padding-top: 60px;
+      }
     }
 }

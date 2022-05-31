@@ -38,7 +38,6 @@ h4 {
 p {
   font-weight: 300;
   font-size: 17px;
-  max-width: 560px;
 }
 
 .button {
@@ -57,7 +56,7 @@ p {
 }
 
 blockquote {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 blockquote p {
   margin: 10px 0;
@@ -175,6 +174,15 @@ blockquote cite {
   width: 100%;
   border: 3px solid var(--black-lighter);
   transform: skew(1deg) rotate(-1deg);
+}
+
+.footer-scroll {
+  background: var(--black-lighter);
+  color: var(--white);
+  text-align: center;
+  padding: 30px;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
 /*# sourceMappingURL=common.css.map */
