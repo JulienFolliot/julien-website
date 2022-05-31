@@ -581,10 +581,11 @@ h3 {
 :root {
   --highlight-bg: #FCA311;
   --dark-bg: #E5E5E5;
-  --black-lighter: #040d1e;
+  --black-lighter: #020710;
   --secondary: #4E9FA5;
   --white: #FFFFFF;
   --roboto: "Roboto", sans-serif;
+  --shadow: 0px -10px 50px 0px rgb(0 0 0 / 11%);
   font-family: var(--roboto);
   color: var(--black-lighter);
 }
@@ -819,7 +820,7 @@ body.home .last-articles-scroll .projects {
 body.home .last-articles-scroll .projects .project {
   display: inline-block;
   background: var(--white);
-  box-shadow: 19px 0px 33px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
   margin: 20px;
   max-width: 300px;
   min-height: 400px;
@@ -943,7 +944,7 @@ body.article .content-scroll {
   padding: 0 60px 80px 60px;
   max-width: 860px;
   margin: -190px auto 200px auto;
-  box-shadow: 0px -10px 50px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: var(--shadow);
   background: var(--white);
 }
 body.article .content-scroll .article-title {
@@ -952,7 +953,7 @@ body.article .content-scroll .article-title {
   left: -25px;
   color: var(--white);
   background-color: var(--black-lighter);
-  box-shadow: 0px -10px 50px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: var(--shadow);
 }
 body.article .content-scroll .article-title h1 {
   margin: 14px 50px;
@@ -965,7 +966,7 @@ body.article .content-scroll .article-category {
   right: -20px;
 }
 body.article .content-scroll .article-category .highlight:before, body.article .content-scroll .article-category .highlight:after {
-  box-shadow: 0px -10px 50px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: var(--shadow);
 }
 body.article .content-scroll .article-content {
   padding-top: 60px;
