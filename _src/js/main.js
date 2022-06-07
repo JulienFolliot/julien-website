@@ -9,7 +9,7 @@
     }
 
     var typedOptions = {
-        strings: ['Code', 'Livres', 'Bricolage', 'Matos', 'Toolbox', 'Musique', 'Bonnes pratiques', 'Découvertes'],
+        strings: ['Code', 'Livres', 'Bricolage', 'Découvertes', 'Modélisation 3D', 'Toolbox', 'Musique', 'Bonnes pratiques', 'Matos'],
         typeSpeed: 34,
         backDelay: 1200,
         loop: true,
