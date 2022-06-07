@@ -20,7 +20,7 @@ Je fais pas mal de veille (techno mais pas que), j'expérimente des trucs, je d�
 - Quels trucs cools que j'ai découvert en le faisant ?
 - etc...
 
-Finalement, c'est un peu perdu pour moi, ça ne profite à personne d'autre et ça ne permet pas de prendre du recul sur tout ce travail d'à-côté. C'est ainsi que m'est venu l'idée d'écrire au jour le jour le fruit de mes expériences, mes découvertes, mon ressenti. Un blog en fait :) Mais en mieux parce que j'appelle ça un jounral de bord ! 😁
+Finalement, c'est un peu perdu pour moi, ça ne profite à personne d'autre et ça ne permet pas de prendre du recul sur tout ce travail d'à-côté. C'est ainsi que m'est venu l'idée d'écrire au jour le jour le fruit de mes expériences, mes découvertes, mon ressenti. Un blog en fait :) Mais en mieux parce que j'appelle ça un journal de bord ! 😁
 
 ## Un peu comme une maison
 

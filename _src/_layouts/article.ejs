@@ -19,7 +19,8 @@
             <div class="article-content">
                 <h1><%= title %></h1>
                 <%- content %>
-                <p class="end-of-article">Fin du consignation du jour <%= Math.round(((new Date(page.date)).getTime() - (new Date(pkg.startDate)).getTime()) / (1000*60*60*24)) %> - fermeture du journal</p>
+                <hr>
+                <p class="end-of-article">Fin de consignation du jour <%= Math.round(((new Date(page.date)).getTime() - (new Date(pkg.startDate)).getTime()) / (1000*60*60*24)) %> - fermeture du journal</p>
             </div>
         </section>
 
