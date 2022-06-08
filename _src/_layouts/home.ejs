@@ -57,7 +57,7 @@
                 <a href="<%= collections.carnet[i].url %>">
                   <img src="/img/<%= collections.carnet[i].fileSlug %>/thumbnail.png" alt="Image d'illustration de l'article <%= collections.carnet[i].data.title %>">
                   <h4>Jour <%= Math.round(((new Date(collections.carnet[i].data.date)).getTime() - (new Date(pkg.startDate)).getTime()) / (1000*60*60*24)) %></h4>
-                  <p><%= collections.carnet[i].data.summary %></p>
+                  <p><%- collections.carnet[i].data.summary %></p>
                 </a>
               </li>
         <%}}%>
