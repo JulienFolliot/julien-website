@@ -49,6 +49,22 @@ body.article .content-scroll .article-category .highlight:before, body.article .
 body.article .content-scroll .article-content {
   padding-top: 60px;
 }
+body.article .content-scroll .article-content blockquote {
+  margin: 50px auto 38px auto;
+  max-width: 580px;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0px -10px 20px 0px #efefef;
+  padding: 30px 30px 20px 30px;
+  border-bottom: 5px solid var(--highlight-bg);
+}
+body.article .content-scroll .article-content blockquote p {
+  font-size: 24px;
+  text-align: center;
+}
+body.article .content-scroll .article-content blockquote cite a {
+  text-decoration: none;
+  color: var(--black-lighter);
+}
 body.article .content-scroll .article-content img {
   display: block;
   width: 80%;
