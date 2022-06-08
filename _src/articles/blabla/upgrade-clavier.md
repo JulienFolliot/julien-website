@@ -25,7 +25,9 @@ Parmi toutes les conversations que j'ai eu, un élément revenait à chaque fois
 
 ## C'est quoi un clavier mécanique ?
 
-Un clavier mécanique c'est un : **Type de clavier d'ordinateur dont chaque touche est actionnée par un switch indépendant** ([Wiktionnaire](https://fr.wiktionary.org/wiki/clavier_m%C3%A9canique)).
+Un clavier mécanique c'est un : 
+
+<blockquote data-scroll data-scroll-speed="1.2"><p>Type de clavier d'ordinateur dont chaque touche est actionnée par un switch indépendant</p><cite><a href="https://fr.wiktionary.org/wiki/clavier_m%C3%A9canique" target="_blank">Wiktionnaire</a></cite></blockquote>
 
 En cherchant un peu, je me suis rendu compte qu'il y avait plusieurs types de switch mais aussi plusieurs constructeurs de switch mais malgré leur nombre, une codification avait émergé. Les différents types de switchs sont rangés par couleurs.
 
