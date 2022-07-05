@@ -1,4 +1,9 @@
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addCollection("carnetReversed", function(collectionApi) {
+    return collectionApi.getFilteredByTag("carnet").reverse();
+  });
+
 	eleventyConfig.setBrowserSyncConfig({
 		files: './_site/css/**/*.css'
 	});

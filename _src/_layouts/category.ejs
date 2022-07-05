@@ -7,6 +7,49 @@
 
         <%- include('common/nav')%>
 
+        <section class="articles-scroll" data-scroll data-scroll-section data-scroll-id="articles-scroll">
+      
+            <ul class="projects" data-scroll data-scroll-speed="2">
+              <% for(var i=0; i < carnetPosts.length; i++) {%>
+                <li class="project">
+                    <a href="<%= carnetPosts[i].url %>">
+                    <img src="/img/<%= carnetPosts[i].fileSlug %>/thumbnail.png" alt="Image d'illustration de l'article <%= carnetPosts[i].data.title %>">
+                    <h4>Jour <%= Math.round(((new Date(carnetPosts[i].data.date)).getTime() - (new Date(pkg.startDate)).getTime()) / (1000*60*60*24)) %></h4>
+                    <p><%- carnetPosts[i].data.summary %></p>
+                    </a>
+                </li>
+              <%}%>
+            </ul>
+
+            <nav>
+
+                <ul>
+                    <% if(page.url !== pagination.href.first) {%>
+                        <li><a href="<%= pagination.href.first %>">&leftarrow;&leftarrow;</a></li>
+                    <% } %>
+
+                    <% if(pagination.href.previous) {%>
+                        <li><a href="<%= pagination.href.previous %>">&leftarrow;</a></li>
+                    <% } %> 
+
+                    <% pagination.pages.map(function (item, index) { %> 
+                        <a href="<%= pagination.hrefs[index] %>" <%= pagination.hrefs[index] ? 'aria-current="page"' : "" %>><%= index + 1 %> </a>
+                    <% }) %>
+
+                    <% if(pagination.href.next) {%>
+                        <li><a href="<%= pagination.href.next %>">&rightarrow;</a></li>
+                    <% } %> 
+                    
+                    <% if(page.url !== pagination.href.last) {%>
+                        <li><a href="<%= pagination.href.last %>">&rightarrow;&rightarrow;</a></li>
+                    <% } %> 
+
+                </ul>
+
+            </nav>
+      
+        </section>
+
         <%- include('common/footer')%>
 
         <%- include('common/js')%>
